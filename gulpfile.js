@@ -7,7 +7,7 @@ var sh = require('shelljs');
 var uglify = require("gulp-uglify");
 
 var paths = {
-    mainjs: ['./src/**/*.module.js', './src/**/*.js'],
+    mainjs: ['./src/**/*.module.js', './src/**/*.js', '!./src/vendors/**/*', '!src/frameworks.js', '!src/index.js'],
     bundlejs: [
         './src/vendors/angular/angular.js',
         // put additional external libs here
